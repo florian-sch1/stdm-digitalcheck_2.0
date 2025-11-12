@@ -3,7 +3,8 @@ export interface Question {
   category: string;
   question: string;
   example?: string;
-  processDefinition?: string;
+  definitionLabel?: string;
+  definitionText?: string;
   step: "vorpruefung" | "vertieft" | "ergebnis";
 }
 
@@ -12,7 +13,8 @@ export const questions: Question[] = [
     id: "q1",
     category: "Digitale Prozesse",
     question: "Enthält die Regelung Verfahrensvorschriften oder sind mit ihr in Zusammenhang stehende Prozesse betroffen?",
-    processDefinition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    definitionLabel: "Was ist mit \"Prozesse\" gemeint?",
+    definitionText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     step: "vorpruefung",
   },
@@ -34,6 +36,8 @@ export const questions: Question[] = [
     id: "q4",
     category: "Datennutzung",
     question: "Werden Daten erhoben oder können vorhandene Daten (auch von anderen Stellen) wiederverwendet werden?",
+    definitionLabel: "Was ist \"Daten\" gemeint?",
+    definitionText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     step: "vorpruefung",
   },
@@ -41,6 +45,8 @@ export const questions: Question[] = [
     id: "q5",
     category: "IT-Systeme",
     question: "Wird zum Vollzug der Regelung die Nutzung, Anpassung oder Neuentwicklung einer IT-Lösung erforderlich bzw. könnte der Vollzug dadurch vereinfacht oder verbessert werden?",
+    definitionLabel: "Was ist mit \"IT-Lösung\" gemeint?",
+    definitionText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     step: "vorpruefung",
   },

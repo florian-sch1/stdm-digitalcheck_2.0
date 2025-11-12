@@ -26,7 +26,7 @@ export const QuestionCard = ({
   isLast,
 }: QuestionCardProps) => {
   const [isExampleOpen, setIsExampleOpen] = useState(false);
-  const [isProcessDefinitionOpen, setIsProcessDefinitionOpen] = useState(false);
+  const [isDefinitionOpen, setIsDefinitionOpen] = useState(false);
 
   return (
     <div className="max-w-2xl mx-auto p-8">
@@ -34,17 +34,17 @@ export const QuestionCard = ({
         <h1 className="text-2xl font-semibold text-foreground mb-2">
           {question.question}
         </h1>
-        {question.processDefinition && (
-          <Collapsible open={isProcessDefinitionOpen} onOpenChange={setIsProcessDefinitionOpen} className="mb-2">
+        {question.definitionText && (
+          <Collapsible open={isDefinitionOpen} onOpenChange={setIsDefinitionOpen} className="mb-2">
             <CollapsibleTrigger className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <ChevronRight 
-                className={`h-4 w-4 transition-transform duration-200 ${isProcessDefinitionOpen ? 'rotate-90' : ''}`} 
+                className={`h-4 w-4 transition-transform duration-200 ${isDefinitionOpen ? 'rotate-90' : ''}`} 
               />
-              <span>Was ist mit "Prozesse" gemeint?</span>
+              <span>{question.definitionLabel}</span>
             </CollapsibleTrigger>
             <CollapsibleContent className="mt-2">
               <p className="text-sm text-muted-foreground italic">
-                {question.processDefinition}
+                {question.definitionText}
               </p>
             </CollapsibleContent>
           </Collapsible>
