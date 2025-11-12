@@ -17,7 +17,7 @@ export const questions: Question[] = [
   {
     id: "q2",
     category: "Verpflichtungen für Beteiligte",
-    question: "Ergeben sich aus den digitalen Prozessen rechtliche Verpflichtungen für die beteiligten Personen?",
+    question: "Enthält oder verursacht die Regelung Mitwirkungspflichten für Beteiligte (Bürger, Unternehmen, staatliche Stellen)?",
     example: "z.B. Einhaltung von Fristen, Dokumentationspflichten, Vertragsbedingungen",
     step: "vorpruefung",
   },
