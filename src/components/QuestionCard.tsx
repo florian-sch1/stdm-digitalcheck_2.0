@@ -70,20 +70,20 @@ export const QuestionCard = ({
         <RadioGroup value={answer} onValueChange={onAnswerChange}>
           <div className="space-y-3">
             <div className="flex items-center space-x-3 p-3 border border-border rounded-md hover:bg-muted/30 transition-colors">
-              <RadioGroupItem value="ja" id="ja" />
-              <Label htmlFor="ja" className="flex-1 cursor-pointer">
+              <RadioGroupItem value="ja" id={`ja-${question.id}`} />
+              <Label htmlFor={`ja-${question.id}`} className="flex-1 cursor-pointer">
                 Ja
               </Label>
             </div>
             <div className="flex items-center space-x-3 p-3 border border-border rounded-md hover:bg-muted/30 transition-colors">
-              <RadioGroupItem value="nein" id="nein" />
-              <Label htmlFor="nein" className="flex-1 cursor-pointer">
+              <RadioGroupItem value="nein" id={`nein-${question.id}`} />
+              <Label htmlFor={`nein-${question.id}`} className="flex-1 cursor-pointer">
                 Nein
               </Label>
             </div>
             <div className="flex items-center space-x-3 p-3 border border-border rounded-md hover:bg-muted/30 transition-colors">
-              <RadioGroupItem value="unsicher" id="unsicher" />
-              <Label htmlFor="unsicher" className="flex-1 cursor-pointer">
+              <RadioGroupItem value="unsicher" id={`unsicher-${question.id}`} />
+              <Label htmlFor={`unsicher-${question.id}`} className="flex-1 cursor-pointer">
                 Ich bin unsicher
               </Label>
             </div>
