@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { ChevronDown } from "lucide-react";
 import { Question } from "@/data/questions";
 
 interface QuestionCardProps {
@@ -22,6 +25,8 @@ export const QuestionCard = ({
   isFirst,
   isLast,
 }: QuestionCardProps) => {
+  const [isExampleOpen, setIsExampleOpen] = useState(false);
+
   return (
     <div className="max-w-2xl mx-auto p-8">
       <div className="mb-8">
@@ -29,9 +34,19 @@ export const QuestionCard = ({
           {question.question}
         </h1>
         {question.example && (
-          <p className="text-sm text-muted-foreground italic">
-            Beispiel: {question.example}
-          </p>
+          <Collapsible open={isExampleOpen} onOpenChange={setIsExampleOpen}>
+            <CollapsibleTrigger className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <span>Beispiel</span>
+              <ChevronDown 
+                className={`h-4 w-4 transition-transform duration-200 ${isExampleOpen ? 'rotate-180' : ''}`} 
+              />
+            </CollapsibleTrigger>
+            <CollapsibleContent className="mt-2">
+              <p className="text-sm text-muted-foreground italic">
+                {question.example}
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
         )}
       </div>
 
