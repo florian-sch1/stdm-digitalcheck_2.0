@@ -20,9 +20,9 @@ export const IntroScreen = ({ onNext, onBack }: IntroScreenProps) => {
             Alle Fragen beziehen sich auch auf die <strong>Umsetzung</strong> nach Inkrafttreten des Regelungsvorhabens.
           </p>
           
-          <div className="border border-border rounded-lg p-4 bg-muted">
+          <div className="border border-border rounded-lg p-4 bg-secondary">
             <div className="flex gap-3">
-              <Lightbulb className="h-5 w-5 text-foreground flex-shrink-0 mt-0.5" />
+              <Lightbulb className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
               <div className="flex-1">
                 <h4 className="font-semibold text-foreground mb-2">
                   Eine oder mehrere Vorprüfungen?

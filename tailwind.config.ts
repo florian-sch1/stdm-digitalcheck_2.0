@@ -57,6 +57,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+        info: "hsl(var(--info))",
+        brand: {
+          light: "#CDECF8",
+          medium: "#36AEE1",
+          DEFAULT: "#0093D0",
+          dark: "#000000",
+        },
+        signal: {
+          error: "#C91119",
+          warning: "#FFD800",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
