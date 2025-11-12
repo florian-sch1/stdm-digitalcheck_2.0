@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Stepper } from "@/components/Stepper";
 import { QuestionSidebar } from "@/components/QuestionSidebar";
@@ -12,23 +12,31 @@ const Questionnaire = () => {
   const [currentStep] = useState(1);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
+  const [currentAnswer, setCurrentAnswer] = useState<string | undefined>(undefined);
 
   const steps = ["Vorprüfung", "Vertiefung", "Ergebnis"];
   const vorpruefungQuestions = questions.filter((q) => q.step === "vorpruefung");
   const currentQuestion = vorpruefungQuestions[currentQuestionIndex];
 
+  useEffect(() => {
+    setCurrentAnswer(answers[currentQuestion.id]);
+  }, [currentQuestionIndex, currentQuestion.id, answers]);
+
   const handleAnswerChange = (value: string) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [currentQuestion.id]: value,
-    }));
+    setCurrentAnswer(value);
   };
 
   const handleNext = () => {
+    if (currentAnswer) {
+      setAnswers((prev) => ({
+        ...prev,
+        [currentQuestion.id]: currentAnswer,
+      }));
+    }
+
     if (currentQuestionIndex < vorpruefungQuestions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
     } else {
-      // Navigate to result or next step
       navigate("/ergebnis");
     }
   };
@@ -61,7 +69,7 @@ const Questionnaire = () => {
         <main className="flex-1 overflow-auto py-12">
           <QuestionCard
             question={currentQuestion}
-            answer={answers[currentQuestion.id]}
+            answer={currentAnswer}
             onAnswerChange={handleAnswerChange}
             onNext={handleNext}
             onBack={handleBack}
