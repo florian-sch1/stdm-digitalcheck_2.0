@@ -24,7 +24,7 @@ export const questions: Question[] = [
   {
     id: "q3",
     category: "Digitale Kommunikation",
-    question: "Nutzt Ihr Unternehmen digitale Kanäle zur Kommunikation mit Kunden oder Geschäftspartnern?",
+    question: "Löst der Vollzug der Regelung Kommunikation zwischen Beteiligten aus?",
     example: "z.B. E-Mail, Messenger, Online-Portale, soziale Medien",
     step: "vorpruefung",
   },
