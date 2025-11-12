@@ -38,7 +38,7 @@ export const questions: Question[] = [
   {
     id: "q5",
     category: "IT-Systeme",
-    question: "Setzen Sie IT-Systeme zur Unterstützung Ihrer Geschäftsprozesse ein?",
+    question: "Wird zum Vollzug der Regelung die Nutzung, Anpassung oder Neuentwicklung einer IT-Lösung erforderlich bzw. könnte der Vollzug dadurch vereinfacht oder verbessert werden?",
     example: "z.B. ERP-Systeme, CRM-Software, Buchhaltungssoftware, Cloud-Dienste",
     step: "vorpruefung",
   },
