@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Stepper } from "@/components/Stepper";
 import { QuestionSidebar } from "@/components/QuestionSidebar";
 import { QuestionCard } from "@/components/QuestionCard";
+import { IntroScreen } from "@/components/IntroScreen";
 import { questions } from "@/data/questions";
 
 type Answers = Record<string, string>;
@@ -10,6 +11,7 @@ type Answers = Record<string, string>;
 const Questionnaire = () => {
   const navigate = useNavigate();
   const [currentStep] = useState(1);
+  const [showIntro, setShowIntro] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
   const [currentAnswer, setCurrentAnswer] = useState<string | undefined>(undefined);
@@ -21,6 +23,14 @@ const Questionnaire = () => {
   useEffect(() => {
     setCurrentAnswer(answers[currentQuestion.id]);
   }, [currentQuestionIndex, currentQuestion.id, answers]);
+
+  const handleIntroNext = () => {
+    setShowIntro(false);
+  };
+
+  const handleIntroBack = () => {
+    navigate("/");
+  };
 
   const handleAnswerChange = (value: string) => {
     setCurrentAnswer(value);
@@ -61,21 +71,28 @@ const Questionnaire = () => {
       <div className="flex flex-1">
         <QuestionSidebar
           questions={vorpruefungQuestions}
-          currentQuestionId={currentQuestion.id}
-          onQuestionSelect={handleQuestionSelect}
+          currentQuestionId={showIntro ? "" : currentQuestion.id}
+          onQuestionSelect={showIntro ? () => {} : handleQuestionSelect}
           answers={answers}
         />
         
         <main className="flex-1 overflow-auto py-12">
-          <QuestionCard
-            question={currentQuestion}
-            answer={currentAnswer}
-            onAnswerChange={handleAnswerChange}
-            onNext={handleNext}
-            onBack={handleBack}
-            isFirst={currentQuestionIndex === 0}
-            isLast={currentQuestionIndex === vorpruefungQuestions.length - 1}
-          />
+          {showIntro ? (
+            <IntroScreen 
+              onNext={handleIntroNext}
+              onBack={handleIntroBack}
+            />
+          ) : (
+            <QuestionCard
+              question={currentQuestion}
+              answer={currentAnswer}
+              onAnswerChange={handleAnswerChange}
+              onNext={handleNext}
+              onBack={handleBack}
+              isFirst={currentQuestionIndex === 0}
+              isLast={currentQuestionIndex === vorpruefungQuestions.length - 1}
+            />
+          )}
         </main>
       </div>
     </div>
