@@ -3,7 +3,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { ChevronDown } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Question } from "@/data/questions";
 
 interface QuestionCardProps {
@@ -36,10 +36,10 @@ export const QuestionCard = ({
         {question.example && (
           <Collapsible open={isExampleOpen} onOpenChange={setIsExampleOpen}>
             <CollapsibleTrigger className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <span>Beispiel</span>
-              <ChevronDown 
-                className={`h-4 w-4 transition-transform duration-200 ${isExampleOpen ? 'rotate-180' : ''}`} 
+              <ChevronRight 
+                className={`h-4 w-4 transition-transform duration-200 ${isExampleOpen ? 'rotate-90' : ''}`} 
               />
+              <span>Beispiel</span>
             </CollapsibleTrigger>
             <CollapsibleContent className="mt-2">
               <p className="text-sm text-muted-foreground italic">
