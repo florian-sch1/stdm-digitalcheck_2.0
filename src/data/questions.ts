@@ -45,7 +45,7 @@ export const questions: Question[] = [
   {
     id: "q6",
     category: "Automatisierung",
-    question: "Werden Entscheidungen in Ihren digitalen Prozessen automatisiert getroffen?",
+    question: "Kommt (teil-)automatisierte Vollzug in Betracht?",
     example: "z.B. automatische Bonitätsprüfung, algorithmische Preisgestaltung, automatisierte Freigaben",
     step: "vorpruefung",
   },
