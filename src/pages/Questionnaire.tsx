@@ -13,7 +13,7 @@ const Questionnaire = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
 
-  const steps = ["Vorprüfung", "Vertiefter Fragenkatalog", "Ergebnis"];
+  const steps = ["Vorprüfung", "Vertiefung", "Ergebnis"];
   const vorpruefungQuestions = questions.filter((q) => q.step === "vorpruefung");
   const currentQuestion = vorpruefungQuestions[currentQuestionIndex];
 
