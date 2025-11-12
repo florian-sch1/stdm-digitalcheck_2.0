@@ -3,6 +3,7 @@ export interface Question {
   category: string;
   question: string;
   example?: string;
+  processDefinition?: string;
   step: "vorpruefung" | "vertieft" | "ergebnis";
 }
 
@@ -11,6 +12,7 @@ export const questions: Question[] = [
     id: "q1",
     category: "Digitale Prozesse",
     question: "Enthält die Regelung Verfahrensvorschriften oder sind mit ihr in Zusammenhang stehende Prozesse betroffen?",
+    processDefinition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     step: "vorpruefung",
   },
