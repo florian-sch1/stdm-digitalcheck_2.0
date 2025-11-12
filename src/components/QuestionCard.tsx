@@ -67,7 +67,7 @@ export const QuestionCard = ({
       </div>
 
       <div className="mb-8">
-        <RadioGroup value={answer} onValueChange={onAnswerChange}>
+        <RadioGroup key={question.id} value={answer} onValueChange={onAnswerChange}>
           <div className="space-y-3">
             <div className="flex items-center space-x-3 p-3 border border-border rounded-md hover:bg-muted/30 transition-colors">
               <RadioGroupItem value="ja" id={`ja-${question.id}`} />
