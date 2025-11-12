@@ -1,0 +1,76 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Stepper } from "@/components/Stepper";
+import { QuestionSidebar } from "@/components/QuestionSidebar";
+import { QuestionCard } from "@/components/QuestionCard";
+import { questions } from "@/data/questions";
+
+type Answers = Record<string, string>;
+
+const Questionnaire = () => {
+  const navigate = useNavigate();
+  const [currentStep] = useState(1);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [answers, setAnswers] = useState<Answers>({});
+
+  const steps = ["Vorprüfung", "Vertiefter Fragenkatalog", "Ergebnis"];
+  const vorpruefungQuestions = questions.filter((q) => q.step === "vorpruefung");
+  const currentQuestion = vorpruefungQuestions[currentQuestionIndex];
+
+  const handleAnswerChange = (value: string) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [currentQuestion.id]: value,
+    }));
+  };
+
+  const handleNext = () => {
+    if (currentQuestionIndex < vorpruefungQuestions.length - 1) {
+      setCurrentQuestionIndex((prev) => prev + 1);
+    } else {
+      // Navigate to result or next step
+      navigate("/ergebnis");
+    }
+  };
+
+  const handleBack = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex((prev) => prev - 1);
+    }
+  };
+
+  const handleQuestionSelect = (questionId: string) => {
+    const index = vorpruefungQuestions.findIndex((q) => q.id === questionId);
+    if (index !== -1) {
+      setCurrentQuestionIndex(index);
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background">
+      <Stepper currentStep={currentStep} steps={steps} />
+      
+      <div className="flex flex-1">
+        <QuestionSidebar
+          questions={vorpruefungQuestions}
+          currentQuestionId={currentQuestion.id}
+          onQuestionSelect={handleQuestionSelect}
+        />
+        
+        <main className="flex-1 overflow-auto py-12">
+          <QuestionCard
+            question={currentQuestion}
+            answer={answers[currentQuestion.id]}
+            onAnswerChange={handleAnswerChange}
+            onNext={handleNext}
+            onBack={handleBack}
+            isFirst={currentQuestionIndex === 0}
+            isLast={currentQuestionIndex === vorpruefungQuestions.length - 1}
+          />
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default Questionnaire;
