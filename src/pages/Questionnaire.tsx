@@ -55,6 +55,7 @@ const Questionnaire = () => {
           questions={vorpruefungQuestions}
           currentQuestionId={currentQuestion.id}
           onQuestionSelect={handleQuestionSelect}
+          answers={answers}
         />
         
         <main className="flex-1 overflow-auto py-12">
