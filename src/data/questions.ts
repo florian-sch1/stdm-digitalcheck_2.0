@@ -31,7 +31,7 @@ export const questions: Question[] = [
   {
     id: "q4",
     category: "Datennutzung",
-    question: "Werden personenbezogene Daten im Rahmen der digitalen Prozesse verarbeitet?",
+    question: "Werden Daten erhoben oder können vorhandene Daten (auch von anderen Stellen) wiederverwendet werden?",
     example: "z.B. Kundendaten, Mitarbeiterdaten, Kontaktinformationen",
     step: "vorpruefung",
   },
