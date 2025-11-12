@@ -14,7 +14,7 @@ export const questions: Question[] = [
     category: "Digitale Prozesse",
     question: "Enthält die Regelung Verfahrensvorschriften oder sind mit ihr in Zusammenhang stehende Prozesse betroffen?",
     definitionLabel: "Was ist mit \"Prozesse\" gemeint?",
-    definitionText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    definitionText: "Prozesse umfassen alle Abläufe und Verfahrensschritte, die zur Umsetzung einer Regelung notwendig sind. Dazu gehören beispielsweise Antrags-, Genehmigungs-, Prüf- oder Meldeverfahren sowie die damit verbundenen Kommunikations- und Dokumentationswege zwischen Beteiligten.",
     example: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
     step: "vorpruefung",
   },
