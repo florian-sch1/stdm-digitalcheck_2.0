@@ -10,7 +10,7 @@ export const questions: Question[] = [
   {
     id: "q1",
     category: "Digitale Prozesse",
-    question: "Werden in Ihrem Unternehmen Geschäftsprozesse digital durchgeführt?",
+    question: "Enthält die Regelung Verfahrensvorschriften oder sind mit ihr in Zusammenhang stehende Prozesse betroffen?",
     example: "z.B. digitale Rechnungsstellung, Online-Bestellungen, digitale Vertragsunterzeichnung",
     step: "vorpruefung",
   },
