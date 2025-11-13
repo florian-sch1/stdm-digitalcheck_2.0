@@ -34,27 +34,27 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <Card>
+            <Card className="bg-primary/5 border-primary/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="text-sm text-muted-foreground">
                   digitalplan bayern (2023)
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm italic">
+                <p className="text-sm italic text-foreground">
                   "Wir wollen das Landesrecht digitaltauglich ausgestalten. Mit dem Digitalcheck prüfen wir daher Gesetzgebungsvorhaben von Anfang an auf ihre digitale Kompatibilität."
                 </p>
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="bg-primary/5 border-primary/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="text-sm text-muted-foreground">
                   koalitionsvertrag 2023-2028
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm italic">
+                <p className="text-sm italic text-foreground">
                   "Wir führen einen Digitalcheck ein. Bei jedem Entwurf eines neuen Gesetzes muss Digitalisierung gleich mitgedacht werden."
                 </p>
               </CardContent>
