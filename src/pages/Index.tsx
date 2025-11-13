@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const Index = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen flex flex-col bg-background">
@@ -28,8 +29,36 @@ const Index = () => {
             </p>
             
             <p>
-              Angeboten und durchgeführt wird der Digitalcheck von der Zentralstelle für den Digitalcheck beim Staatsministerium für Digitales (StMD).  
+              Angeboten und durchgeführt wird der Digitalcheck von der Zentralstelle für den Digitalcheck beim Staatsministerium für Digitales (StMD).  
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-sm text-muted-foreground">
+                  digitalplan bayern (2023)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm italic">
+                  "Wir wollen das Landesrecht digitaltauglich ausgestalten. Mit dem Digitalcheck prüfen wir daher Gesetzgebungsvorhaben von Anfang an auf ihre digitale Kompatibilität."
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-sm text-muted-foreground">
+                  koalitionsvertrag 2023-2028
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm italic">
+                  "Wir führen einen Digitalcheck ein. Bei jedem Entwurf eines neuen Gesetzes muss Digitalisierung gleich mitgedacht werden."
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </section>
         
