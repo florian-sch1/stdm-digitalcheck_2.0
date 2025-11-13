@@ -69,7 +69,7 @@ const Index = () => {
           </h2>
           
           <div className="space-y-4 text-lg text-foreground leading-relaxed">
-            <p>
+            <p className="font-semibold">
               Die Digitalisierung verändert die Art und Weise, wie Behörden arbeiten, 
               grundlegend. Verwaltungsprozesse können automatisiert, optimiert und 
               beschleunigt werden. Dies führt zu einer Effizienzsteigerung und deutlich 
