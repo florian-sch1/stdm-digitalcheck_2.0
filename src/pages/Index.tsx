@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Users, Database, Target } from "lucide-react";
+import { Zap, Users, Database, Target, FileText, MessageSquare, RefreshCw, Shield, Cpu, Network, AlertTriangle, CheckCircle, Lightbulb } from "lucide-react";
 const Index = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen flex flex-col bg-background">
@@ -129,6 +129,421 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </section>
+        
+        {/* Sieben Grundsätze für digitaltaugliche Regelungen Section */}
+        <section className="space-y-6 mb-12">
+          <h2 className="text-3xl font-bold text-foreground">
+            Sieben Grundsätze für digitaltaugliche Regelungen
+          </h2>
+          
+          <p className="text-lg text-foreground leading-relaxed">
+            Die sieben Grundsätze helfen Ihnen, Regelungen von Anfang an digitaltauglich zu gestalten. 
+            Klicken Sie auf einen Grundsatz, um mehr über Bedeutung, Vorteile und Praxis-Beispiele zu erfahren.
+          </p>
+
+          <Accordion type="single" collapsible className="w-full space-y-3">
+            
+            {/* Grundsatz 01 - Vollständig */}
+            <AccordionItem 
+              value="grundsatz-01" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <FileText className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">01</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Eindeutigkeit der Regelung
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                {/* Was bedeutet das Prinzip? */}
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Nur eindeutige und klare Regelungen können erfolgreich digitalisiert werden. 
+                    Verständliche Sprache, einfacher Satzbau, prägnante Formulierungen und eine 
+                    logische Struktur erleichtern nicht nur allen Beteiligten das Leben, sondern 
+                    lassen sich auch besser in Programmcode umsetzen.
+                  </p>
+                </div>
+                
+                {/* Vorteile & Nachteile */}
+                <div>
+                  <h4 className="text-base font-semibold text-foreground mb-4">
+                    Vorteile & Nachteile
+                  </h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="border border-green-200 rounded-lg p-4 bg-green-50/50">
+                      <div className="flex items-center gap-2 mb-3">
+                        <CheckCircle className="w-5 h-5 text-green-600" />
+                        <h5 className="font-semibold text-green-900">Vorteile bei Einhaltung</h5>
+                      </div>
+                      <ul className="space-y-2 text-sm text-green-900/80">
+                        <li>• Schnellere und kostengünstigere Digitalisierung</li>
+                        <li>• Geringere Fehleranfälligkeit bei der Umsetzung</li>
+                        <li>• Bessere Verständlichkeit für alle Beteiligten</li>
+                        <li>• Automatisierte Verarbeitung wird möglich</li>
+                        <li>• Weniger Rückfragen und Interpretationsspielräume</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border border-orange-200 rounded-lg p-4 bg-orange-50/50">
+                      <div className="flex items-center gap-2 mb-3">
+                        <AlertTriangle className="w-5 h-5 text-orange-600" />
+                        <h5 className="font-semibold text-orange-900">Nachteile bei Nichtbeachtung</h5>
+                      </div>
+                      <ul className="space-y-2 text-sm text-orange-900/80">
+                        <li>• Interpretationsspielräume führen zu Fehlern</li>
+                        <li>• Höhere Implementierungskosten</li>
+                        <li>• Verzögerte oder unmögliche Digitalisierung</li>
+                        <li>• Rechtsunsicherheit und Streitanfälligkeit</li>
+                        <li>• Manuelle Prüfung bleibt notwendig</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Praxis-Beispiele */}
+                <div className="space-y-4">
+                  <h4 className="text-base font-semibold text-foreground flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5 text-primary" />
+                    Praxis-Beispiele
+                  </h4>
+                  
+                  {/* Konkrete Sachverhalte */}
+                  <div className="bg-blue-50/50 border border-blue-200 rounded-lg p-4">
+                    <h5 className="font-semibold text-blue-900 mb-3 text-sm">
+                      Konkrete Sachverhalte
+                    </h5>
+                    <div className="space-y-3">
+                      <div className="bg-white rounded p-3 border border-blue-100">
+                        <p className="text-xs font-semibold text-blue-900 mb-1">
+                          Beispiel 1: Baugenehmigungen
+                        </p>
+                        <p className="text-sm text-blue-900/80">
+                          Klare Regelung der erforderlichen Unterlagen, eindeutige Fristen 
+                          und definierte Zuständigkeiten ermöglichen vollständig digitale 
+                          Antragstellung und automatisierte Prüfung der Vollständigkeit.
+                        </p>
+                      </div>
+                      
+                      <div className="bg-white rounded p-3 border border-blue-100">
+                        <p className="text-xs font-semibold text-blue-900 mb-1">
+                          Beispiel 2: Elterngeldbewilligung
+                        </p>
+                        <p className="text-sm text-blue-900/80">
+                          Präzise Formulierung der Anspruchsvoraussetzungen ermöglicht 
+                          automatisierte Vorprüfung und verkürzt Bearbeitungszeiten erheblich.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded p-3 border border-blue-100">
+                        <p className="text-xs font-semibold text-blue-900 mb-1">
+                          Beispiel 3: Führerscheinantrag
+                        </p>
+                        <p className="text-sm text-blue-900/80">
+                          Eindeutige Definition der Nachweise (z.B. Sehtest, Erste-Hilfe-Kurs) 
+                          mit klaren Anforderungen ermöglicht digitale Einreichung und automatische 
+                          Validierung der Dokumente.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Spezifische Formulierungen */}
+                  <div className="bg-purple-50/50 border border-purple-200 rounded-lg p-4">
+                    <h5 className="font-semibold text-purple-900 mb-3 text-sm">
+                      Spezifische Formulierungen
+                    </h5>
+                    <div className="space-y-3">
+                      <div className="bg-white rounded p-3 border border-purple-100">
+                        <div className="flex items-start gap-2 mb-2">
+                          <span className="text-red-600 font-semibold text-xs">✗ Ungünstig:</span>
+                        </div>
+                        <p className="text-sm text-gray-700 italic mb-3">
+                          "Der Antrag ist unverzüglich zu bearbeiten."
+                        </p>
+                        
+                        <div className="flex items-start gap-2 mb-2">
+                          <span className="text-green-600 font-semibold text-xs">✓ Besser:</span>
+                        </div>
+                        <p className="text-sm text-gray-700">
+                          "Der Antrag ist innerhalb von 14 Tagen nach Eingang zu bearbeiten."
+                        </p>
+                      </div>
+                      
+                      <div className="bg-white rounded p-3 border border-purple-100">
+                        <div className="flex items-start gap-2 mb-2">
+                          <span className="text-red-600 font-semibold text-xs">✗ Ungünstig:</span>
+                        </div>
+                        <p className="text-sm text-gray-700 italic mb-3">
+                          "Es sind die erforderlichen Unterlagen einzureichen."
+                        </p>
+                        
+                        <div className="flex items-start gap-2 mb-2">
+                          <span className="text-green-600 font-semibold text-xs">✓ Besser:</span>
+                        </div>
+                        <p className="text-sm text-gray-700">
+                          "Folgende Unterlagen sind einzureichen: 1. Personalausweis, 
+                          2. Einkommensnachweise der letzten 3 Monate, 3. Geburtsurkunde."
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded p-3 border border-purple-100">
+                        <div className="flex items-start gap-2 mb-2">
+                          <span className="text-red-600 font-semibold text-xs">✗ Ungünstig:</span>
+                        </div>
+                        <p className="text-sm text-gray-700 italic mb-3">
+                          "Die Behörde kann Fristverlängerungen gewähren."
+                        </p>
+                        
+                        <div className="flex items-start gap-2 mb-2">
+                          <span className="text-green-600 font-semibold text-xs">✓ Besser:</span>
+                        </div>
+                        <p className="text-sm text-gray-700">
+                          "Die Behörde kann auf begründeten Antrag die Frist um maximal 30 Tage verlängern. 
+                          Der Antrag ist spätestens 5 Tage vor Fristablauf zu stellen."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Grundsatz 02 - Platzhalter */}
+            <AccordionItem 
+              value="grundsatz-02" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <MessageSquare className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">02</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Ermöglichung digitaler Kommunikation
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Digitale Kommunikation zwischen Bürgerinnen, Bürgern, Unternehmen und Verwaltung 
+                    sollte in Regelungen von Anfang an ermöglicht und gefördert werden.
+                  </p>
+                </div>
+                
+                <div className="border border-muted rounded-lg p-6 bg-muted/20 text-center">
+                  <p className="text-sm text-muted-foreground italic">
+                    Detaillierte Inhalte zu Vorteilen, Nachteilen und Praxis-Beispielen folgen in Kürze.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Grundsatz 03 - Platzhalter */}
+            <AccordionItem 
+              value="grundsatz-03" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <RefreshCw className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">03</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Wiederverwendung von Daten und Standards
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Die Mehrfachnutzung bereits vorhandener Daten und die Verwendung etablierter 
+                    Standards vereinfacht Prozesse und erhöht die Effizienz.
+                  </p>
+                </div>
+                
+                <div className="border border-muted rounded-lg p-6 bg-muted/20 text-center">
+                  <p className="text-sm text-muted-foreground italic">
+                    Detaillierte Inhalte zu Vorteilen, Nachteilen und Praxis-Beispielen folgen in Kürze.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Grundsatz 04 - Platzhalter */}
+            <AccordionItem 
+              value="grundsatz-04" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Shield className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">04</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Datenschutz und Informationssicherheit
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Datenschutz und Informationssicherheit müssen von Anfang an in Regelungen 
+                    mitgedacht und gewährleistet werden.
+                  </p>
+                </div>
+                
+                <div className="border border-muted rounded-lg p-6 bg-muted/20 text-center">
+                  <p className="text-sm text-muted-foreground italic">
+                    Detaillierte Inhalte zu Vorteilen, Nachteilen und Praxis-Beispielen folgen in Kürze.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Grundsatz 05 - Platzhalter */}
+            <AccordionItem 
+              value="grundsatz-05" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Cpu className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">05</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Möglichkeit der automatisierten Sachbearbeitung
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Regelungen sollten so gestaltet sein, dass eine automatisierte Sachbearbeitung 
+                    technisch möglich wird und Effizienzgewinne realisiert werden können.
+                  </p>
+                </div>
+                
+                <div className="border border-muted rounded-lg p-6 bg-muted/20 text-center">
+                  <p className="text-sm text-muted-foreground italic">
+                    Detaillierte Inhalte zu Vorteilen, Nachteilen und Praxis-Beispielen folgen in Kürze.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Grundsatz 06 - Platzhalter */}
+            <AccordionItem 
+              value="grundsatz-06" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Network className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">06</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Berücksichtigung vorhandener Infrastrukturen
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Bestehende IT-Infrastrukturen und Systeme sollten bei der Regelungsgestaltung 
+                    berücksichtigt werden, um Synergien zu nutzen und Kosten zu sparen.
+                  </p>
+                </div>
+                
+                <div className="border border-muted rounded-lg p-6 bg-muted/20 text-center">
+                  <p className="text-sm text-muted-foreground italic">
+                    Detaillierte Inhalte zu Vorteilen, Nachteilen und Praxis-Beispielen folgen in Kürze.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Grundsatz 07 - Platzhalter */}
+            <AccordionItem 
+              value="grundsatz-07" 
+              className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
+            >
+              <AccordionTrigger className="hover:no-underline py-5">
+                <div className="flex items-center gap-4 text-left w-full">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <AlertTriangle className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-mono text-primary">07</span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        Vermeidung von Missbrauch und Fehlern
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              
+              <AccordionContent className="pt-2 pb-6 space-y-6">
+                <div>
+                  <p className="text-base text-foreground leading-relaxed">
+                    Regelungen müssen so gestaltet sein, dass Missbrauch verhindert und Fehler 
+                    minimiert werden, auch in digitalen Verfahren.
+                  </p>
+                </div>
+                
+                <div className="border border-muted rounded-lg p-6 bg-muted/20 text-center">
+                  <p className="text-sm text-muted-foreground italic">
+                    Detaillierte Inhalte zu Vorteilen, Nachteilen und Praxis-Beispielen folgen in Kürze.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+          </Accordion>
         </section>
         
         <Separator className="my-12" />
