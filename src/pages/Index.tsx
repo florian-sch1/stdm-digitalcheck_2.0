@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { ProcessStepper } from "@/components/ProcessStepper";
 import {
   Accordion,
   AccordionContent,
@@ -14,8 +13,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <ProcessStepper currentStep={1} />
-      
       <main className="container mx-auto px-4 md:px-8 py-12 max-w-4xl">
         <div className="space-y-8">
           {/* Header Section */}
