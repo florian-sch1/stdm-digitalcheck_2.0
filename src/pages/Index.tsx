@@ -176,7 +176,7 @@ const Index = () => {
                   </h4>
                   
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div className="border border-green-200 rounded-lg p-4 bg-green-50/50">
+                    <div className="border border-green-200 rounded-lg p-4 bg-white">
                       <div className="flex items-center gap-2 mb-3">
                         <CheckCircle className="w-5 h-5 text-green-600" />
                         <h5 className="font-semibold text-green-900">Vorteile bei Einhaltung</h5>
@@ -190,7 +190,7 @@ const Index = () => {
                       </ul>
                     </div>
                     
-                    <div className="border border-orange-200 rounded-lg p-4 bg-orange-50/50">
+                    <div className="border border-orange-200 rounded-lg p-4 bg-white">
                       <div className="flex items-center gap-2 mb-3">
                         <AlertTriangle className="w-5 h-5 text-orange-600" />
                         <h5 className="font-semibold text-orange-900">Nachteile bei Nichtbeachtung</h5>
@@ -214,7 +214,7 @@ const Index = () => {
                   </h4>
                   
                   {/* Konkrete Sachverhalte */}
-                  <div className="bg-blue-50/50 border border-blue-200 rounded-lg p-4">
+                  <div className="bg-white border border-blue-200 rounded-lg p-4">
                     <h5 className="font-semibold text-blue-900 mb-3 text-sm">
                       Konkrete Sachverhalte
                     </h5>
