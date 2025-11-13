@@ -50,7 +50,7 @@ const Index = () => {
             <Card className="bg-primary/5 border-primary/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="text-sm text-muted-foreground">
-                  koalitionsvertrag 2023-2028
+                  Koalitionsvertrag 2023-2028
                 </CardTitle>
               </CardHeader>
               <CardContent>
