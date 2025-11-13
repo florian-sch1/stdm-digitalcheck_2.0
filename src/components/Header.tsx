@@ -40,7 +40,7 @@ export const Header = () => {
               className="text-foreground hover:text-primary transition-colors"
               activeClassName="text-primary font-medium"
             >
-              Fragebogen
+              Zum Digitalcheck
             </NavLink>
             <Popover>
               <PopoverTrigger asChild>
@@ -93,7 +93,7 @@ export const Header = () => {
                   className="text-lg text-foreground hover:text-primary transition-colors"
                   activeClassName="text-primary font-medium"
                 >
-                  Fragebogen
+                  Zum Digitalcheck
                 </NavLink>
                 <Popover>
                   <PopoverTrigger asChild>
