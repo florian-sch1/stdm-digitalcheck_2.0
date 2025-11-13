@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header } from "@/components/Header";
 import Index from "./pages/Index";
 import Questionnaire from "./pages/Questionnaire";
 import Result from "./pages/Result";
@@ -16,13 +17,18 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/fragebogen" element={<Questionnaire />} />
-          <Route path="/ergebnis" element={<Result />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="min-h-screen flex flex-col w-full">
+          <Header />
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/fragebogen" element={<Questionnaire />} />
+              <Route path="/ergebnis" element={<Result />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
