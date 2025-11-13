@@ -1,19 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
-
 const Index = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen flex flex-col bg-background">
+  return <div className="min-h-screen flex flex-col bg-background">
       <main className="container mx-auto px-4 md:px-8 py-12 max-w-4xl">
         {/* Was ist der Digitalcheck? Section */}
         <section className="space-y-6 mb-12">
@@ -36,10 +28,7 @@ const Index = () => {
             </p>
             
             <p>
-              Angeboten und durchgeführt wird der Digitalcheck von der Zentralstelle für 
-              den Digitalcheck beim Staatsministerium für Digitales (StMD). Die Zentralstelle 
-              für den Digitalcheck stellt gemeinsam mit der bayerischen Digitalagentur byte 
-              ein umfassendes Hilfs- und Unterstützungspaket für die Ressorts zur Verfügung.
+              Angeboten und durchgeführt wird der Digitalcheck von der Zentralstelle für den Digitalcheck beim Staatsministerium für Digitales (StMD).  
             </p>
           </div>
         </section>
@@ -94,19 +83,10 @@ const Index = () => {
 
           {/* Buttons Section */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              onClick={() => navigate("/fragebogen")} 
-              size="lg"
-              className="w-full sm:w-auto"
-            >
+            <Button onClick={() => navigate("/fragebogen")} size="lg" className="w-full sm:w-auto">
               Vorprüfung starten
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => window.history.back()}
-              className="w-full sm:w-auto"
-            >
+            <Button variant="outline" size="lg" onClick={() => window.history.back()} className="w-full sm:w-auto">
               Zurück
             </Button>
           </div>
@@ -158,8 +138,6 @@ const Index = () => {
           </Tabs>
         </div>
       </main>
-    </div>
-  );
-}
-
+    </div>;
+};
 export default Index;
