@@ -176,12 +176,12 @@ const Index = () => {
                   </h4>
                   
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div className="border border-green-200 rounded-lg p-4 bg-green-50/50">
+                    <div className="border border-border rounded-lg p-4 bg-muted/50">
                       <div className="flex items-center gap-2 mb-3">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
-                        <h5 className="font-semibold text-green-900">Vorteile bei Einhaltung</h5>
+                        <CheckCircle className="w-5 h-5 text-primary" />
+                        <h5 className="font-semibold text-foreground">Vorteile bei Einhaltung</h5>
                       </div>
-                      <ul className="space-y-2 text-sm text-green-900/80">
+                      <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• Schnellere und kostengünstigere Digitalisierung</li>
                         <li>• Geringere Fehleranfälligkeit bei der Umsetzung</li>
                         <li>• Bessere Verständlichkeit für alle Beteiligten</li>
@@ -190,12 +190,12 @@ const Index = () => {
                       </ul>
                     </div>
                     
-                    <div className="border border-orange-200 rounded-lg p-4 bg-orange-50/50">
+                    <div className="border border-border rounded-lg p-4 bg-muted/50">
                       <div className="flex items-center gap-2 mb-3">
-                        <AlertTriangle className="w-5 h-5 text-orange-600" />
-                        <h5 className="font-semibold text-orange-900">Nachteile bei Nichtbeachtung</h5>
+                        <AlertTriangle className="w-5 h-5 text-foreground" />
+                        <h5 className="font-semibold text-foreground">Nachteile bei Nichtbeachtung</h5>
                       </div>
-                      <ul className="space-y-2 text-sm text-orange-900/80">
+                      <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• Interpretationsspielräume führen zu Fehlern</li>
                         <li>• Höhere Implementierungskosten</li>
                         <li>• Verzögerte oder unmögliche Digitalisierung</li>
@@ -214,37 +214,37 @@ const Index = () => {
                   </h4>
                   
                   {/* Konkrete Sachverhalte */}
-                  <div className="bg-blue-50/50 border border-blue-200 rounded-lg p-4">
-                    <h5 className="font-semibold text-blue-900 mb-3 text-sm">
+                  <div className="bg-muted/50 border border-border rounded-lg p-4">
+                    <h5 className="font-semibold text-foreground mb-3 text-sm">
                       Konkrete Sachverhalte
                     </h5>
                     <div className="space-y-3">
-                      <div className="bg-white rounded p-3 border border-blue-100">
-                        <p className="text-xs font-semibold text-blue-900 mb-1">
+                      <div className="bg-white rounded p-3 border border-border">
+                        <p className="text-xs font-semibold text-foreground mb-1">
                           Beispiel 1: Baugenehmigungen
                         </p>
-                        <p className="text-sm text-blue-900/80">
+                        <p className="text-sm text-muted-foreground">
                           Klare Regelung der erforderlichen Unterlagen, eindeutige Fristen 
                           und definierte Zuständigkeiten ermöglichen vollständig digitale 
                           Antragstellung und automatisierte Prüfung der Vollständigkeit.
                         </p>
                       </div>
                       
-                      <div className="bg-white rounded p-3 border border-blue-100">
-                        <p className="text-xs font-semibold text-blue-900 mb-1">
+                      <div className="bg-white rounded p-3 border border-border">
+                        <p className="text-xs font-semibold text-foreground mb-1">
                           Beispiel 2: Elterngeldbewilligung
                         </p>
-                        <p className="text-sm text-blue-900/80">
+                        <p className="text-sm text-muted-foreground">
                           Präzise Formulierung der Anspruchsvoraussetzungen ermöglicht 
                           automatisierte Vorprüfung und verkürzt Bearbeitungszeiten erheblich.
                         </p>
                       </div>
 
-                      <div className="bg-white rounded p-3 border border-blue-100">
-                        <p className="text-xs font-semibold text-blue-900 mb-1">
+                      <div className="bg-white rounded p-3 border border-border">
+                        <p className="text-xs font-semibold text-foreground mb-1">
                           Beispiel 3: Führerscheinantrag
                         </p>
-                        <p className="text-sm text-blue-900/80">
+                        <p className="text-sm text-muted-foreground">
                           Eindeutige Definition der Nachweise (z.B. Sehtest, Erste-Hilfe-Kurs) 
                           mit klaren Anforderungen ermöglicht digitale Einreichung und automatische 
                           Validierung der Dokumente.
@@ -254,37 +254,37 @@ const Index = () => {
                   </div>
                   
                   {/* Spezifische Formulierungen */}
-                  <div className="bg-purple-50/50 border border-purple-200 rounded-lg p-4">
-                    <h5 className="font-semibold text-purple-900 mb-3 text-sm">
+                  <div className="bg-muted/50 border border-border rounded-lg p-4">
+                    <h5 className="font-semibold text-foreground mb-3 text-sm">
                       Spezifische Formulierungen
                     </h5>
                     <div className="space-y-3">
-                      <div className="bg-white rounded p-3 border border-purple-100">
+                      <div className="bg-white rounded p-3 border border-border">
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-red-600 font-semibold text-xs">✗ Ungünstig:</span>
+                          <span className="text-muted-foreground font-semibold text-xs">✗ Ungünstig:</span>
                         </div>
                         <p className="text-sm text-gray-700 italic mb-3">
                           "Der Antrag ist unverzüglich zu bearbeiten."
                         </p>
                         
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-green-600 font-semibold text-xs">✓ Besser:</span>
+                          <span className="text-primary font-semibold text-xs">✓ Besser:</span>
                         </div>
                         <p className="text-sm text-gray-700">
                           "Der Antrag ist innerhalb von 14 Tagen nach Eingang zu bearbeiten."
                         </p>
                       </div>
                       
-                      <div className="bg-white rounded p-3 border border-purple-100">
+                      <div className="bg-white rounded p-3 border border-border">
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-red-600 font-semibold text-xs">✗ Ungünstig:</span>
+                          <span className="text-muted-foreground font-semibold text-xs">✗ Ungünstig:</span>
                         </div>
                         <p className="text-sm text-gray-700 italic mb-3">
                           "Es sind die erforderlichen Unterlagen einzureichen."
                         </p>
                         
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-green-600 font-semibold text-xs">✓ Besser:</span>
+                          <span className="text-primary font-semibold text-xs">✓ Besser:</span>
                         </div>
                         <p className="text-sm text-gray-700">
                           "Folgende Unterlagen sind einzureichen: 1. Personalausweis, 
