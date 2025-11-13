@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Zap, Users, Database, Target } from "lucide-react";
 const Index = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen flex flex-col bg-background">
@@ -68,33 +69,73 @@ const Index = () => {
             Warum brauchen wir digitaltaugliche Regelungen?
           </h2>
           
-          <div className="space-y-4 text-lg text-foreground leading-relaxed">
-            <p className="font-semibold">
-              Die Digitalisierung verändert die Art und Weise, wie Behörden arbeiten, 
-              grundlegend. Verwaltungsprozesse können automatisiert, optimiert und 
-              beschleunigt werden. Dies führt zu einer Effizienzsteigerung und deutlich 
-              verringertem Bürokratieaufwand.
-            </p>
-            
-            <p>
-              Digitale Dienstleistungen ermöglichen es Bürgerinnen und Bürgern, 
-              Behördenangelegenheiten einfach und effizient ohne lange Wartezeiten 
-              oder Papierkram zu erledigen.
-            </p>
-            
-            <p>
-              Die Digitalisierung erleichtert der Verwaltung den Austausch und die 
-              Nutzung vorhandener Daten und kann so zu besseren und schnelleren 
-              Entscheidungen beitragen. Sie eröffnet neue Möglichkeiten für innovative 
-              Lösungen.
-            </p>
-            
-            <p>
-              Um das volle Potenzial der Digitalisierung ausschöpfen zu können, sind 
-              digitaltaugliche Vorschriften unerlässlich. Es gilt, neue 
-              Digitalisierungshemmnisse zu vermeiden und bestehende Hindernisse 
-              sukzessive abzubauen.
-            </p>
+          <div className="grid gap-6 mt-6">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-lg font-bold text-primary">1</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-start gap-3">
+                  <Zap className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p className="text-lg text-foreground leading-relaxed">
+                    <span className="font-semibold">Effizienzsteigerung:</span> Die Digitalisierung verändert die Art und Weise, wie Behörden arbeiten, 
+                    grundlegend. Verwaltungsprozesse können automatisiert, optimiert und 
+                    beschleunigt werden. Dies führt zu einer Effizienzsteigerung und deutlich 
+                    verringertem Bürokratieaufwand.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-lg font-bold text-primary">2</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-start gap-3">
+                  <Users className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p className="text-lg text-foreground leading-relaxed">
+                    <span className="font-semibold">Bürgerservice:</span> Digitale Dienstleistungen ermöglichen es Bürgerinnen und Bürgern, 
+                    Behördenangelegenheiten einfach und effizient ohne lange Wartezeiten 
+                    oder Papierkram zu erledigen.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-lg font-bold text-primary">3</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-start gap-3">
+                  <Database className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p className="text-lg text-foreground leading-relaxed">
+                    <span className="font-semibold">Datenaustausch:</span> Die Digitalisierung erleichtert der Verwaltung den Austausch und die 
+                    Nutzung vorhandener Daten und kann so zu besseren und schnelleren 
+                    Entscheidungen beitragen. Sie eröffnet neue Möglichkeiten für innovative 
+                    Lösungen.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="text-lg font-bold text-primary">4</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-start gap-3">
+                  <Target className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p className="text-lg text-foreground leading-relaxed">
+                    <span className="font-semibold">Digitaltaugliche Vorschriften:</span> Um das volle Potenzial der Digitalisierung ausschöpfen zu können, sind 
+                    digitaltaugliche Vorschriften unerlässlich. Es gilt, neue 
+                    Digitalisierungshemmnisse zu vermeiden und bestehende Hindernisse 
+                    sukzessive abzubauen.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
