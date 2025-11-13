@@ -147,7 +147,7 @@ const Index = () => {
             {/* Grundsatz 01 - Vollständig */}
             <AccordionItem 
               value="grundsatz-01" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
@@ -317,7 +317,7 @@ const Index = () => {
             {/* Grundsatz 02 - Platzhalter */}
             <AccordionItem 
               value="grundsatz-02" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
@@ -347,7 +347,7 @@ const Index = () => {
             {/* Grundsatz 03 - Platzhalter */}
             <AccordionItem 
               value="grundsatz-03" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
@@ -377,7 +377,7 @@ const Index = () => {
             {/* Grundsatz 04 - Platzhalter */}
             <AccordionItem 
               value="grundsatz-04" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
@@ -407,7 +407,7 @@ const Index = () => {
             {/* Grundsatz 05 - Platzhalter */}
             <AccordionItem 
               value="grundsatz-05" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
@@ -437,7 +437,7 @@ const Index = () => {
             {/* Grundsatz 06 - Platzhalter */}
             <AccordionItem 
               value="grundsatz-06" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
@@ -467,7 +467,7 @@ const Index = () => {
             {/* Grundsatz 07 - Platzhalter */}
             <AccordionItem 
               value="grundsatz-07" 
-              className="border border-warning/30 rounded-lg px-6 bg-warning/10 hover:bg-warning/20 hover:border-warning/50 transition-colors"
+              className="border border-warning rounded-lg px-6 bg-warning hover:brightness-95 transition-all"
             >
             <AccordionTrigger className="hover:no-underline py-5">
               <div className="flex items-center gap-3 text-left w-full">
