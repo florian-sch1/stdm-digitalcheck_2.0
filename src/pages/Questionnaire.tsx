@@ -47,7 +47,7 @@ const Questionnaire = () => {
     if (currentQuestionIndex < vorpruefungQuestions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
     } else {
-      navigate("/ergebnis");
+      navigate("/ergebnis", { state: { answers } });
     }
   };
 
