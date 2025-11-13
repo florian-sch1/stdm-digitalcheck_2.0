@@ -263,7 +263,7 @@ const Index = () => {
                         </p>
                         
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-primary font-semibold text-xs">✓ Besser:</span>
+                          <span className="text-muted-foreground font-semibold text-xs">✓ Besser:</span>
                         </div>
                         <p className="text-sm text-gray-700">
                           "Der Antrag ist innerhalb von 14 Tagen nach Eingang zu bearbeiten."
@@ -279,7 +279,7 @@ const Index = () => {
                         </p>
                         
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-primary font-semibold text-xs">✓ Besser:</span>
+                          <span className="text-muted-foreground font-semibold text-xs">✓ Besser:</span>
                         </div>
                         <p className="text-sm text-gray-700">
                           "Folgende Unterlagen sind einzureichen: 1. Personalausweis, 
@@ -287,16 +287,16 @@ const Index = () => {
                         </p>
                       </div>
 
-                      <div className="bg-white rounded p-3 border border-purple-100">
+                      <div className="bg-white rounded p-3 border border-border">
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-red-600 font-semibold text-xs">✗ Ungünstig:</span>
+                          <span className="text-muted-foreground font-semibold text-xs">✗ Ungünstig:</span>
                         </div>
                         <p className="text-sm text-gray-700 italic mb-3">
                           "Die Behörde kann Fristverlängerungen gewähren."
                         </p>
                         
                         <div className="flex items-start gap-2 mb-2">
-                          <span className="text-green-600 font-semibold text-xs">✓ Besser:</span>
+                          <span className="text-muted-foreground font-semibold text-xs">✓ Besser:</span>
                         </div>
                         <p className="text-sm text-gray-700">
                           "Die Behörde kann auf begründeten Antrag die Frist um maximal 30 Tage verlängern. 
