@@ -37,7 +37,7 @@ const Index = () => {
             <Card className="bg-primary/5 border-primary/20 hover:border-primary/40 transition-colors">
               <CardHeader>
                 <CardTitle className="text-sm text-muted-foreground">
-                  digitalplan bayern (2023)
+                  Digitalplan Bayern (2023)
                 </CardTitle>
               </CardHeader>
               <CardContent>
