@@ -149,21 +149,14 @@ const Index = () => {
               value="grundsatz-01" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">01</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Eindeutigkeit der Regelung
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">01</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Eindeutigkeit der Regelung
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 {/* Was bedeutet das Prinzip? */}
@@ -326,21 +319,14 @@ const Index = () => {
               value="grundsatz-02" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <MessageSquare className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">02</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Ermöglichung digitaler Kommunikation
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">02</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Ermöglichung digitaler Kommunikation
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 <div>
@@ -363,21 +349,14 @@ const Index = () => {
               value="grundsatz-03" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <RefreshCw className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">03</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Wiederverwendung von Daten und Standards
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">03</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Wiederverwendung von Daten und Standards
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 <div>
@@ -400,21 +379,14 @@ const Index = () => {
               value="grundsatz-04" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">04</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Datenschutz und Informationssicherheit
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">04</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Datenschutz und Informationssicherheit
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 <div>
@@ -437,21 +409,14 @@ const Index = () => {
               value="grundsatz-05" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Cpu className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">05</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Möglichkeit der automatisierten Sachbearbeitung
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">05</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Möglichkeit der automatisierten Sachbearbeitung
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 <div>
@@ -474,21 +439,14 @@ const Index = () => {
               value="grundsatz-06" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Network className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">06</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Berücksichtigung vorhandener Infrastrukturen
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">06</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Berücksichtigung vorhandener Infrastrukturen
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 <div>
@@ -511,21 +469,14 @@ const Index = () => {
               value="grundsatz-07" 
               className="border border-primary/20 rounded-lg px-6 bg-card hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <AlertTriangle className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono text-primary">07</span>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Vermeidung von Missbrauch und Fehlern
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </AccordionTrigger>
+            <AccordionTrigger className="hover:no-underline py-5">
+              <div className="flex items-center gap-3 text-left w-full">
+                <span className="text-sm font-mono text-primary">07</span>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Vermeidung von Missbrauch und Fehlern
+                </h3>
+              </div>
+            </AccordionTrigger>
               
               <AccordionContent className="pt-2 pb-6 space-y-6">
                 <div>
