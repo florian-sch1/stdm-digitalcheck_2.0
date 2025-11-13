@@ -37,17 +37,21 @@ const Questionnaire = () => {
   };
 
   const handleNext = () => {
+    // Create updated answers object immediately with current answer
+    const updatedAnswers = currentAnswer 
+      ? { ...answers, [currentQuestion.id]: currentAnswer }
+      : answers;
+
+    // Update state for next question
     if (currentAnswer) {
-      setAnswers((prev) => ({
-        ...prev,
-        [currentQuestion.id]: currentAnswer,
-      }));
+      setAnswers(updatedAnswers);
     }
 
     if (currentQuestionIndex < vorpruefungQuestions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
     } else {
-      navigate("/ergebnis", { state: { answers } });
+      // Pass updated answers (including q6!) to result page
+      navigate("/ergebnis", { state: { answers: updatedAnswers } });
     }
   };
 
