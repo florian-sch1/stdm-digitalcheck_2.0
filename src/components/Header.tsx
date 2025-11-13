@@ -1,10 +1,15 @@
-import { Menu } from "lucide-react";
+import { Menu, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { NavLink } from "@/components/NavLink";
 import logo from "@/assets/logo.png";
 
@@ -37,13 +42,34 @@ export const Header = () => {
             >
               Fragebogen
             </NavLink>
-            <NavLink
-              to="/ergebnis"
-              className="text-foreground hover:text-primary transition-colors"
-              activeClassName="text-primary font-medium"
-            >
-              Ergebnis
-            </NavLink>
+            <Popover>
+              <PopoverTrigger asChild>
+                <button className="text-foreground hover:text-primary transition-colors cursor-pointer">
+                  Kontakt
+                </button>
+              </PopoverTrigger>
+              <PopoverContent className="w-64">
+                <div className="space-y-3">
+                  <h3 className="font-semibold text-foreground">Kontakt</h3>
+                  <div className="space-y-2">
+                    <a 
+                      href="mailto:digitalcheck@stmd.bayern.de"
+                      className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
+                    >
+                      <Mail className="h-4 w-4" />
+                      digitalcheck@stmd.bayern.de
+                    </a>
+                    <a 
+                      href="tel:+498945354990"
+                      className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
+                    >
+                      <Phone className="h-4 w-4" />
+                      089/453549-0
+                    </a>
+                  </div>
+                </div>
+              </PopoverContent>
+            </Popover>
           </nav>
 
           {/* Mobile Navigation */}
@@ -69,13 +95,34 @@ export const Header = () => {
                 >
                   Fragebogen
                 </NavLink>
-                <NavLink
-                  to="/ergebnis"
-                  className="text-lg text-foreground hover:text-primary transition-colors"
-                  activeClassName="text-primary font-medium"
-                >
-                  Ergebnis
-                </NavLink>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <button className="text-lg text-foreground hover:text-primary transition-colors text-left">
+                      Kontakt
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-64">
+                    <div className="space-y-3">
+                      <h3 className="font-semibold text-foreground">Kontakt</h3>
+                      <div className="space-y-2">
+                        <a 
+                          href="mailto:digitalcheck@stmd.bayern.de"
+                          className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
+                        >
+                          <Mail className="h-4 w-4" />
+                          digitalcheck@stmd.bayern.de
+                        </a>
+                        <a 
+                          href="tel:+498945354990"
+                          className="flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
+                        >
+                          <Phone className="h-4 w-4" />
+                          089/453549-0
+                        </a>
+                      </div>
+                    </div>
+                  </PopoverContent>
+                </Popover>
               </nav>
             </SheetContent>
           </Sheet>
