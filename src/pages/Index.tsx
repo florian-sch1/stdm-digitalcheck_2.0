@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -14,12 +15,43 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <main className="container mx-auto px-4 md:px-8 py-12 max-w-4xl">
+        {/* Was ist der Digitalcheck? Section */}
+        <section className="space-y-6 mb-12">
+          <h1 className="text-4xl font-bold text-foreground">
+            Was ist der Digitalcheck?
+          </h1>
+          
+          <div className="space-y-4 text-lg text-foreground leading-relaxed">
+            <p>
+              Mit dem Digitalcheck machen wir das bayerische Landesrecht digitaltauglich. 
+              Wir unterstützen die Ressorts bei der Erstellung digitaltauglicher Normen 
+              und befähigen sie zur eigenverantwortlichen Umsetzung der sieben Grundsätze 
+              für digitaltaugliche Regelungen.
+            </p>
+            
+            <p>
+              Für Gesetzentwürfe der Ressorts der Bayerischen Staatsregierung und ihre 
+              Verordnungen ist er obligatorisch. Das Angebot gilt aber auch für alle 
+              Verwaltungsvorschriften.
+            </p>
+            
+            <p>
+              Angeboten und durchgeführt wird der Digitalcheck von der Zentralstelle für 
+              den Digitalcheck beim Staatsministerium für Digitales (StMD). Die Zentralstelle 
+              für den Digitalcheck stellt gemeinsam mit der bayerischen Digitalagentur byte 
+              ein umfassendes Hilfs- und Unterstützungspaket für die Ressorts zur Verfügung.
+            </p>
+          </div>
+        </section>
+        
+        <Separator className="my-12" />
+        
         <div className="space-y-8">
-          {/* Header Section */}
+          {/* Vorprüfung Section */}
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold text-foreground">
+            <h2 className="text-3xl font-bold text-foreground">
               Vorprüfung: Digitalbezug einschätzen
-            </h1>
+            </h2>
             <p className="text-lg text-foreground leading-relaxed">
               Finden Sie in 6 Fragen heraus, ob Sie in Ihrem Regelungsvorhaben Aspekte
               der digitalen Umsetzung und EU-Anforderungen an Interoperabilität
