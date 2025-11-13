@@ -35,12 +35,10 @@ export const Header = () => {
             >
               Start
             </NavLink>
-            <NavLink
-              to="/fragebogen"
-              className="text-foreground hover:text-primary transition-colors"
-              activeClassName="text-primary font-medium"
-            >
-              Zum Digitalcheck
+            <NavLink to="/fragebogen">
+              <Button size="default" className="font-medium">
+                Zum Digitalcheck
+              </Button>
             </NavLink>
             <Popover>
               <PopoverTrigger asChild>
@@ -88,12 +86,10 @@ export const Header = () => {
                 >
                   Start
                 </NavLink>
-                <NavLink
-                  to="/fragebogen"
-                  className="text-lg text-foreground hover:text-primary transition-colors"
-                  activeClassName="text-primary font-medium"
-                >
-                  Zum Digitalcheck
+                <NavLink to="/fragebogen">
+                  <Button size="lg" className="w-full font-medium">
+                    Zum Digitalcheck
+                  </Button>
                 </NavLink>
                 <Popover>
                   <PopoverTrigger asChild>
