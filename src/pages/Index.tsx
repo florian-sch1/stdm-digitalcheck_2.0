@@ -62,6 +62,42 @@ const Index = () => {
           </div>
         </section>
         
+        {/* Warum brauchen wir digitaltaugliche Regelungen? Section */}
+        <section className="space-y-6 mb-12">
+          <h2 className="text-3xl font-bold text-foreground">
+            Warum brauchen wir digitaltaugliche Regelungen?
+          </h2>
+          
+          <div className="space-y-4 text-lg text-foreground leading-relaxed">
+            <p>
+              Die Digitalisierung verändert die Art und Weise, wie Behörden arbeiten, 
+              grundlegend. Verwaltungsprozesse können automatisiert, optimiert und 
+              beschleunigt werden. Dies führt zu einer Effizienzsteigerung und deutlich 
+              verringertem Bürokratieaufwand.
+            </p>
+            
+            <p>
+              Digitale Dienstleistungen ermöglichen es Bürgerinnen und Bürgern, 
+              Behördenangelegenheiten einfach und effizient ohne lange Wartezeiten 
+              oder Papierkram zu erledigen.
+            </p>
+            
+            <p>
+              Die Digitalisierung erleichtert der Verwaltung den Austausch und die 
+              Nutzung vorhandener Daten und kann so zu besseren und schnelleren 
+              Entscheidungen beitragen. Sie eröffnet neue Möglichkeiten für innovative 
+              Lösungen.
+            </p>
+            
+            <p>
+              Um das volle Potenzial der Digitalisierung ausschöpfen zu können, sind 
+              digitaltaugliche Vorschriften unerlässlich. Es gilt, neue 
+              Digitalisierungshemmnisse zu vermeiden und bestehende Hindernisse 
+              sukzessive abzubauen.
+            </p>
+          </div>
+        </section>
+        
         <Separator className="my-12" />
         
         <div className="space-y-8">
