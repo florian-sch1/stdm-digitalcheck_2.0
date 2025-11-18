@@ -1,4 +1,4 @@
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -29,6 +29,20 @@ export const IntroScreen = ({ onNext, onBack }: IntroScreenProps) => {
                 </h4>
                 <p className="text-sm text-muted-foreground">
                   Füllen Sie eine gemeinsame Vorprüfung für alle inhaltlich zusammenhängenden Regelungen eines Vorhabens aus. So viele wie nötig, so wenige wie möglich.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border border-border rounded-lg p-4 bg-secondary">
+            <div className="flex gap-3">
+              <Info className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+              <div className="flex-1">
+                <h4 className="font-semibold text-foreground mb-2">
+                  Gestaltungsspielraum erhalten
+                </h4>
+                <p className="text-sm text-muted-foreground">
+                  In Ausnahmefällen kann es trotz Digitalbezugs vorzugswürdig erscheinen, vorerst bei einem analogen Prozess zu bleiben, z.B. wenn nur sehr wenige Vorgänge zu erwarten sind und sich der Aufwand für eine IT-Umsetzung daher nicht rechnen würde. Gleichwohl spricht auch dann meist nichts dagegen, die rechtlichen Grundlagen bereits digitaltauglich zu gestalten, um eine spätere Änderung von Anfang an zu ermöglichen.
                 </p>
               </div>
             </div>
